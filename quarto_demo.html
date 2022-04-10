@@ -144,12 +144,14 @@
 <section id="global-options" class="level2">
 <h2 class="anchored" data-anchor-id="global-options">Global options</h2>
 <p>Update global options for code chunk execution in the front matter (up in the .qmd where the <code>title:</code>) is. That’ll look something like this:</p>
-<pre class="{r}}"><code>---
-title: "Exploring quarto"
-execution: 
-  warning: false
-  message: false
----</code></pre>
+<div class="cell">
+<div class="sourceCode" id="cb2"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>title<span class="sc">:</span> <span class="st">"Exploring quarto"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>execution<span class="sc">:</span> </span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  warning<span class="sc">:</span> false</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  message<span class="sc">:</span> false</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="sc">---</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 <p>See more on execution options here: https://quarto.org/docs/computations/execution-options.html</p>
 </section>
 <section id="outputs" class="level2">
@@ -159,7 +161,7 @@ execution:
 <div class="sourceCode" id="cb3"><pre class="sourceCode r cell-code code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> mtcars, <span class="fu">aes</span>(<span class="at">x =</span> wt, <span class="at">y =</span> mpg)) <span class="sc">+</span> </span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="quarto_demo_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="672"></p>
+<p><img src="quarto_demo_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
 <p>No surprises there! So what’s new?</p>
@@ -185,7 +187,7 @@ execution:
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> sns.load_dataset(<span class="st">"penguins"</span>)</span>
 <span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>sns.pairplot(df, hue <span class="op">=</span> <span class="st">"species"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<p><img src="quarto_demo_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="556"></p>
+<p><img src="quarto_demo_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid" width="556"></p>
 </div>
 </div>
 <p>You can set code chunk execution options in Python (or other language) chunks the same way (using the hashpipe <code>#|</code>).</p>

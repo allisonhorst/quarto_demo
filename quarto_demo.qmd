@@ -44,7 +44,8 @@ The other code chunk options we use (e.g. `echo`, `include`, `eval`) work simila
 
 Update global options for code chunk execution in the front matter (up in the .qmd where the `title:`) is. That'll look something like this:
 
-```{r}}
+```{r}
+#| eval: false
 ---
 title: "Exploring quarto"
 execution: 
